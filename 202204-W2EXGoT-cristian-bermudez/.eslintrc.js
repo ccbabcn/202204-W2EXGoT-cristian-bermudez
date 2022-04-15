@@ -3,16 +3,18 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: [
-    'plugin:vue/essential',
-    'airbnb-base',
-  ],
+  extends: ["plugin:vue/essential", "airbnb-base", "prettier"],
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: "latest",
   },
-  plugins: [
-    'vue',
-  ],
+  plugins: [],
   rules: {
+    "no-plusplus": "off",
+    "no-restricted-syntax": "off",
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { exceptAfterSingleLine: true },
+    ],
   },
 };
